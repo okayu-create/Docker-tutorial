@@ -1,6 +1,7 @@
 services:
   web: # アプリの定義
-    build: .
+    image: golang:latest
+    tty: true # コンテナを起動状態のまま維持するための設定
     ports:
       - "8080:8080"
     environment:
